@@ -48,9 +48,9 @@ class FocusPanel: NSPanel {
 
         configurePanel()
 
-        // Set min/max size constraints for resizing (allows compact mode)
-        minSize = NSSize(width: 220, height: 280)
-        maxSize = NSSize(width: 400, height: 700)
+        // Set min/max size constraints for resizing
+        minSize = NSSize(width: 320, height: 620)
+        maxSize = NSSize(width: 450, height: 800)
 
         // Set the SwiftUI content
         let hostingView = NSHostingView(rootView: contentView)

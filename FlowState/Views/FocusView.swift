@@ -30,7 +30,7 @@ struct FocusView: View {
                 }
             }
         }
-        .frame(minWidth: 220, maxWidth: 400, minHeight: 280, maxHeight: 700)
+        .frame(minWidth: 320, maxWidth: 450, minHeight: 620, maxHeight: 800)
         .onAppear {
             selectedMinutes = timerState.targetDurationSeconds / 60
             spotifyManager.startPolling()
