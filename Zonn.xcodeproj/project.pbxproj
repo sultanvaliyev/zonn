@@ -7,99 +7,98 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		001A48436E941FF42C22624B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351F6F3B39D91431AE90944C /* AppDelegate.swift */; };
-		147C5B79618F3F21E9007F8B /* WindowLayoutContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCB6B01C2E70B38A2B07C32 /* WindowLayoutContracts.swift */; };
-		1B1AD5367000C6C276E1DBCB /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B6CCD2D85303E1B9554507 /* SessionStore.swift */; };
-		2E85C74AD1F7E961CEFCC9E8 /* SpotifyPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B55669FDEB3AF34593962C7 /* SpotifyPermissionView.swift */; };
-		3037E207914F1E6A89250DD4 /* SpotifyControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028CBE1C05339ECC7F021A0 /* SpotifyControlButton.swift */; };
-		33D6F0027D4A440C466D255E /* SpotifyMiniPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B355B2CCC88E8EDAFA2D81 /* SpotifyMiniPlayerView.swift */; };
-		3C898A3F88064244368E0B91 /* CircularProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A862622622919EBF250EFB96 /* CircularProgressRing.swift */; };
-		506F4B8F550444D858356D8D /* ZonnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0114E9CEA6E7D7C04B830967 /* ZonnApp.swift */; };
-		55D525D2EC9D8923E5F36542 /* SpotifyColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AC43B0DBA825DCCEB1C863 /* SpotifyColors.swift */; };
-		58E821425D8CD3126668B9BA /* TreeGrowthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544F18708B4ACDD813C96831 /* TreeGrowthView.swift */; };
-		5B7A3E36DEB31882212B18EC /* SpotifyContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5BCE85AA755C56D7C1934 /* SpotifyContracts.swift */; };
-		63D2D98FA8685B89D9DD5028 /* SpotifyPermissionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C95DB15BF1A950A91AC83FB /* SpotifyPermissionProtocol.swift */; };
-		6FB20F7A7CF4B06F72632E5F /* TimerPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC827F700D119E2A361C95 /* TimerPhase.swift */; };
-		70746B835D5088365EDD1BB8 /* FocusPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A12CB340058100FB2523E4C /* FocusPanel.swift */; };
-		76173E8953EAC71A96D2BC2F /* SpotifyPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E89CA7FBBFBE3380B046F5 /* SpotifyPlayerView.swift */; };
-		7816B726D6C66A71DE5AFE9A /* MotivationalTextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9624C9A27CEB12B59A81F6 /* MotivationalTextProvider.swift */; };
-		796A79555D1E625B23B11331 /* SpotifyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547155E90095481A7E16E033 /* SpotifyManager.swift */; };
-		7BDF3C8E893508BBAF770F64 /* FocusSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E4CCB1EB3F4471307DA45 /* FocusSession.swift */; };
-		819010EE7253C43348952FBE /* LayoutSizeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07569926B53525B2A7E4874 /* LayoutSizeClass.swift */; };
-		8AC99DFAAE2C5287C40791E8 /* TimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA430E82FD60BB2C71E11E /* TimerState.swift */; };
-		97C9B24E26C138D16A0F7484 /* AppleScriptSpotifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80598C0E8809ACFCD3907E10 /* AppleScriptSpotifyService.swift */; };
-		986BEFD88485698E866E0DA9 /* AlbumArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07391CDCBDD6997B2A59D078 /* AlbumArtView.swift */; };
-		999770294A4F9B4A30C6A20C /* DurationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB06B4560499D8E9ACB9DCC /* DurationPicker.swift */; };
-		9D88EAD315D55361E24841D0 /* CompactTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7F2BD45C77AA4D0DD35D20 /* CompactTimerView.swift */; };
-		9F6D1433CBFCB104E7A12C58 /* SessionLabelEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9918FDB6D5E0361108CDF /* SessionLabelEditor.swift */; };
-		B03344391DA5844EAD03D423 /* StatisticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F654262B7CB9D7A691B104 /* StatisticsManager.swift */; };
-		B18DE7B2A39885FE201B71C7 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DA6A2FDED66383E787E258 /* AppColors.swift */; };
-		B270B58501ECA66FD664B1A5 /* SpotifyPermissionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF0BDD1BCE7D4EB8BA6EE71 /* SpotifyPermissionHandler.swift */; };
-		B2FB7992DAE738C502F3C915 /* ResizeHandleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF85A5E08F91FD64829A892 /* ResizeHandleView.swift */; };
-		B59D2CD46E2132ED996715B4 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A7BF4FFEBF036BB3A8FD42 /* HistoryView.swift */; };
-		B732BACC32017C32AD7FAE3F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 172FA30E47976554CF494A7F /* PrivacyInfo.xcprivacy */; };
-		BF00C680B60B54CE66EF4A3A /* FocusTimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5765D0EE97F79A60094DAED9 /* FocusTimerState.swift */; };
-		C3EBC5BC3B90193BD7267E5E /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C1835B4DC3D1D04F22259 /* FocusView.swift */; };
-		C54CE98532C29C15382AA0A0 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775847384346E79254D554A0 /* TimerView.swift */; };
-		D2D2BDF834A98ABB818F30AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6160E5FD6788D624BEEE4544 /* Assets.xcassets */; };
-		E77ADFDDC2F183F53CF24B18 /* MockSpotifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5B44BF1E3B475FDBA3C1A2 /* MockSpotifyService.swift */; };
-		F556B3A9A32CB0E39B221431 /* FocusSessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC13A2F396D037AF06D19EB /* FocusSessionModel.swift */; };
+		020B9BF70CAEAF0AE0F6ABAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCB6A090D00345BD982D4D4F /* Assets.xcassets */; };
+		036343E826FCA12FA4585CDD /* SpotifyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A019B98D1F9D870225F3EDF9 /* SpotifyManager.swift */; };
+		03E9C35FEEFAA86CF2A9ACCF /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEA34CAAA6F042BFDE3901F /* FocusView.swift */; };
+		0420B499C2E11D8D7B8EDEF2 /* ResizeHandleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A49269EF3830C8EB6677D /* ResizeHandleView.swift */; };
+		13CAD20044B0D0C38BB8F6CB /* TreeGrowthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE893072BC43866FB6D15371 /* TreeGrowthView.swift */; };
+		147F615D39405EEA902EDE92 /* SpotifyControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1328F76A8CB23C757C79D5BF /* SpotifyControlButton.swift */; };
+		19C03253334540FC4E0F935D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE6F39FA08F09D89FA8F7A /* AppDelegate.swift */; };
+		213F55613A70FD480E2B3ED6 /* MockSpotifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12708290197BDBE3B582233 /* MockSpotifyService.swift */; };
+		252F10785BCACF8241CE19B7 /* SpotifyPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29AABAE47462DDC06B83476 /* SpotifyPermissionView.swift */; };
+		29D6A1C4473F25F365738F52 /* SpotifyContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0CA3D4045FA41215280E76 /* SpotifyContracts.swift */; };
+		2EEEFF2468EBCA92568586E7 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F65086C6E61CBF9EA1D993 /* TimerView.swift */; };
+		36600C143B4E90651BB8002E /* FocusPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6917A20F7E43B373454937D9 /* FocusPanel.swift */; };
+		3A521CAA9DDD4180B873C13E /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5721A52408825C89368F0DE /* AppConstants.swift */; };
+		4001780B8ADC8046D57A6B29 /* WindowLayoutContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7755EA07F6E8E9477BA67FF0 /* WindowLayoutContracts.swift */; };
+		46F3918F0B92D80164DACC35 /* ZonnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A632EB189C4AEBC868447A /* ZonnApp.swift */; };
+		4CA81C78017210E859DF6E15 /* SpotifyColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBFF8BB50C17434BEA3253B /* SpotifyColors.swift */; };
+		5101DE9C607DB7CF88E5BCE6 /* AppleScriptSpotifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC42D07F838139EE0BA29E /* AppleScriptSpotifyService.swift */; };
+		7492DE665B81659E5F3CB402 /* MotivationalTextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109B4E37E79A57E65A5D53B4 /* MotivationalTextProvider.swift */; };
+		764C70B7AFF5FE9FC1448C57 /* StatisticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607535DEF9005303723DDACA /* StatisticsManager.swift */; };
+		84AB5DFF23CE82C4D7B357DE /* TimerPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D79101BF2F9C41FE851F67 /* TimerPhase.swift */; };
+		858B548C9DCAF63BDA070803 /* DurationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A565AAF3C9E6FCCE5F369DA /* DurationPicker.swift */; };
+		86B5234DF740A2A32A3E7838 /* TimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80F7485F2B479D6E9653E9B /* TimerState.swift */; };
+		93E2934B0AC9BF342E4347F1 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988BE24EDAA472A1C660C413 /* SessionStore.swift */; };
+		9E45D129238273DCDCA7A374 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 276226B09825B0BEF3C565BD /* PrivacyInfo.xcprivacy */; };
+		A19C782DF0A215D55616F870 /* FocusSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4FC3A5A0F94659CF1DF8DD /* FocusSession.swift */; };
+		A588C123F94E926573E87F64 /* SpotifyPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB61750007177499CDCB350 /* SpotifyPlayerView.swift */; };
+		A86C55A08F8603BAA4521A93 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509890EE69D0ED188448D843 /* AppColors.swift */; };
+		B39036DCCC9060216172C776 /* CompactTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6846B2F3D769078D1FA02FA /* CompactTimerView.swift */; };
+		BA257257E31935E52379300E /* SpotifyMiniPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF954378AB27B0D5A6AC7AA7 /* SpotifyMiniPlayerView.swift */; };
+		BF3BBFB30B30DA7688FFE118 /* FocusSessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5B3F14437EFB6CA64CB9E7 /* FocusSessionModel.swift */; };
+		C47CBC3F407278EFBBBEC9DC /* CircularProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3AB7B89F0BE308D273083D /* CircularProgressRing.swift */; };
+		D569200C5DC333C2BA13EE67 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB4A6BF2A2F375DE5009B5B /* HistoryView.swift */; };
+		E3A27A342DAC84EE30D65FC8 /* AlbumArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F6C3F427B9A352CAA98AD8 /* AlbumArtView.swift */; };
+		E5A6FD3BDD546ED0F8C6C512 /* FocusTimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5D68C136B47B05606CBCCF /* FocusTimerState.swift */; };
+		E7B90B50FFEDA36E2F1FAE1D /* SpotifyPermissionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11BD0B8E5DC03AA08A73B17 /* SpotifyPermissionHandler.swift */; };
+		EDBB62A5FCFFCE4830D3F911 /* LayoutSizeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458483F919CACD42C7798C00 /* LayoutSizeClass.swift */; };
+		F62FFF3C9BCCD339E186F08C /* SessionLabelEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C44CC529CD9A84E871417 /* SessionLabelEditor.swift */; };
+		F8D7381970E93EF9FB4E7F25 /* SpotifyPermissionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0E5BD1C4BEC06397622A4A /* SpotifyPermissionProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00A41618EBC1575A4872E23F /* Zonn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zonn.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0114E9CEA6E7D7C04B830967 /* ZonnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonnApp.swift; sourceTree = "<group>"; };
-		07391CDCBDD6997B2A59D078 /* AlbumArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumArtView.swift; sourceTree = "<group>"; };
-		07B6CCD2D85303E1B9554507 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
-		13B9918FDB6D5E0361108CDF /* SessionLabelEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionLabelEditor.swift; sourceTree = "<group>"; };
-		172FA30E47976554CF494A7F /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		1FFA430E82FD60BB2C71E11E /* TimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerState.swift; sourceTree = "<group>"; };
-		351F6F3B39D91431AE90944C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C95DB15BF1A950A91AC83FB /* SpotifyPermissionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyPermissionProtocol.swift; sourceTree = "<group>"; };
-		5028CBE1C05339ECC7F021A0 /* SpotifyControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyControlButton.swift; sourceTree = "<group>"; };
-		544F18708B4ACDD813C96831 /* TreeGrowthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeGrowthView.swift; sourceTree = "<group>"; };
-		547155E90095481A7E16E033 /* SpotifyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyManager.swift; sourceTree = "<group>"; };
-		5765D0EE97F79A60094DAED9 /* FocusTimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTimerState.swift; sourceTree = "<group>"; };
-		6160E5FD6788D624BEEE4544 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		61AC827F700D119E2A361C95 /* TimerPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPhase.swift; sourceTree = "<group>"; };
-		73A7BF4FFEBF036BB3A8FD42 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
-		76DA6A2FDED66383E787E258 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
-		775847384346E79254D554A0 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
-		80598C0E8809ACFCD3907E10 /* AppleScriptSpotifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleScriptSpotifyService.swift; sourceTree = "<group>"; };
-		81B355B2CCC88E8EDAFA2D81 /* SpotifyMiniPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyMiniPlayerView.swift; sourceTree = "<group>"; };
-		8B55669FDEB3AF34593962C7 /* SpotifyPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyPermissionView.swift; sourceTree = "<group>"; };
-		8B7F2BD45C77AA4D0DD35D20 /* CompactTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactTimerView.swift; sourceTree = "<group>"; };
-		90F654262B7CB9D7A691B104 /* StatisticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsManager.swift; sourceTree = "<group>"; };
-		975E4CCB1EB3F4471307DA45 /* FocusSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSession.swift; sourceTree = "<group>"; };
-		9A12CB340058100FB2523E4C /* FocusPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusPanel.swift; sourceTree = "<group>"; };
-		9B9624C9A27CEB12B59A81F6 /* MotivationalTextProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationalTextProvider.swift; sourceTree = "<group>"; };
-		A7AC43B0DBA825DCCEB1C863 /* SpotifyColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyColors.swift; sourceTree = "<group>"; };
-		A862622622919EBF250EFB96 /* CircularProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressRing.swift; sourceTree = "<group>"; };
-		BBCB6B01C2E70B38A2B07C32 /* WindowLayoutContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowLayoutContracts.swift; sourceTree = "<group>"; };
-		BBF0BDD1BCE7D4EB8BA6EE71 /* SpotifyPermissionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyPermissionHandler.swift; sourceTree = "<group>"; };
-		BC5B44BF1E3B475FDBA3C1A2 /* MockSpotifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSpotifyService.swift; sourceTree = "<group>"; };
-		BCB06B4560499D8E9ACB9DCC /* DurationPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationPicker.swift; sourceTree = "<group>"; };
-		C07569926B53525B2A7E4874 /* LayoutSizeClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutSizeClass.swift; sourceTree = "<group>"; };
-		C97C1835B4DC3D1D04F22259 /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
-		D0E89CA7FBBFBE3380B046F5 /* SpotifyPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyPlayerView.swift; sourceTree = "<group>"; };
-		D43F4A929FD213936C0A1629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		E9DB5917F3AE569F730A67E5 /* Zonn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zonn.entitlements; sourceTree = "<group>"; };
-		ECF85A5E08F91FD64829A892 /* ResizeHandleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizeHandleView.swift; sourceTree = "<group>"; };
-		EFC13A2F396D037AF06D19EB /* FocusSessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSessionModel.swift; sourceTree = "<group>"; };
-		FAD5BCE85AA755C56D7C1934 /* SpotifyContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyContracts.swift; sourceTree = "<group>"; };
+		07A632EB189C4AEBC868447A /* ZonnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonnApp.swift; sourceTree = "<group>"; };
+		09F65086C6E61CBF9EA1D993 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		0E5B3F14437EFB6CA64CB9E7 /* FocusSessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSessionModel.swift; sourceTree = "<group>"; };
+		109B4E37E79A57E65A5D53B4 /* MotivationalTextProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationalTextProvider.swift; sourceTree = "<group>"; };
+		11F6C3F427B9A352CAA98AD8 /* AlbumArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumArtView.swift; sourceTree = "<group>"; };
+		1328F76A8CB23C757C79D5BF /* SpotifyControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyControlButton.swift; sourceTree = "<group>"; };
+		276226B09825B0BEF3C565BD /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		2EB4A6BF2A2F375DE5009B5B /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		3AB61750007177499CDCB350 /* SpotifyPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyPlayerView.swift; sourceTree = "<group>"; };
+		458483F919CACD42C7798C00 /* LayoutSizeClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutSizeClass.swift; sourceTree = "<group>"; };
+		4D0CA3D4045FA41215280E76 /* SpotifyContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyContracts.swift; sourceTree = "<group>"; };
+		4DAE6F39FA08F09D89FA8F7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4E1C44CC529CD9A84E871417 /* SessionLabelEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionLabelEditor.swift; sourceTree = "<group>"; };
+		509890EE69D0ED188448D843 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		5A3AB7B89F0BE308D273083D /* CircularProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressRing.swift; sourceTree = "<group>"; };
+		5A96A4E7D24D665362801720 /* Zonn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zonn.entitlements; sourceTree = "<group>"; };
+		607535DEF9005303723DDACA /* StatisticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsManager.swift; sourceTree = "<group>"; };
+		6917A20F7E43B373454937D9 /* FocusPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusPanel.swift; sourceTree = "<group>"; };
+		6A565AAF3C9E6FCCE5F369DA /* DurationPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationPicker.swift; sourceTree = "<group>"; };
+		6F4FC3A5A0F94659CF1DF8DD /* FocusSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSession.swift; sourceTree = "<group>"; };
+		7755EA07F6E8E9477BA67FF0 /* WindowLayoutContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowLayoutContracts.swift; sourceTree = "<group>"; };
+		988BE24EDAA472A1C660C413 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		A019B98D1F9D870225F3EDF9 /* SpotifyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyManager.swift; sourceTree = "<group>"; };
+		A11BD0B8E5DC03AA08A73B17 /* SpotifyPermissionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyPermissionHandler.swift; sourceTree = "<group>"; };
+		B29AABAE47462DDC06B83476 /* SpotifyPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyPermissionView.swift; sourceTree = "<group>"; };
+		B2E2CF984B3918C339C34B1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B33A49269EF3830C8EB6677D /* ResizeHandleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizeHandleView.swift; sourceTree = "<group>"; };
+		B5721A52408825C89368F0DE /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		B80F7485F2B479D6E9653E9B /* TimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerState.swift; sourceTree = "<group>"; };
+		B8D79101BF2F9C41FE851F67 /* TimerPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPhase.swift; sourceTree = "<group>"; };
+		BDBFF8BB50C17434BEA3253B /* SpotifyColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyColors.swift; sourceTree = "<group>"; };
+		CCB6A090D00345BD982D4D4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D12708290197BDBE3B582233 /* MockSpotifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSpotifyService.swift; sourceTree = "<group>"; };
+		DDFC42D07F838139EE0BA29E /* AppleScriptSpotifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleScriptSpotifyService.swift; sourceTree = "<group>"; };
+		DE893072BC43866FB6D15371 /* TreeGrowthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeGrowthView.swift; sourceTree = "<group>"; };
+		E6846B2F3D769078D1FA02FA /* CompactTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactTimerView.swift; sourceTree = "<group>"; };
+		EB5D68C136B47B05606CBCCF /* FocusTimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTimerState.swift; sourceTree = "<group>"; };
+		ED0E5BD1C4BEC06397622A4A /* SpotifyPermissionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyPermissionProtocol.swift; sourceTree = "<group>"; };
+		EF954378AB27B0D5A6AC7AA7 /* SpotifyMiniPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyMiniPlayerView.swift; sourceTree = "<group>"; };
+		FBEA34CAAA6F042BFDE3901F /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		16B452D6DF9D3046D5F47B25 /* Models */ = {
+		134B6003CFD614C59E0D7671 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				975E4CCB1EB3F4471307DA45 /* FocusSession.swift */,
-				EFC13A2F396D037AF06D19EB /* FocusSessionModel.swift */,
-				5765D0EE97F79A60094DAED9 /* FocusTimerState.swift */,
-				61AC827F700D119E2A361C95 /* TimerPhase.swift */,
-				1FFA430E82FD60BB2C71E11E /* TimerState.swift */,
+				988BE24EDAA472A1C660C413 /* SessionStore.swift */,
+				607535DEF9005303723DDACA /* StatisticsManager.swift */,
 			);
-			path = Models;
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		1C476C0DDBE32CC98E925E43 /* Products */ = {
@@ -110,126 +109,130 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		35B052EF4183D21DDD9B9DE7 /* Managers */ = {
+		2A39D4ED8C1A952684FA3641 /* Zonn */ = {
 			isa = PBXGroup;
 			children = (
-				07B6CCD2D85303E1B9554507 /* SessionStore.swift */,
-				90F654262B7CB9D7A691B104 /* StatisticsManager.swift */,
+				4DAE6F39FA08F09D89FA8F7A /* AppDelegate.swift */,
+				CCB6A090D00345BD982D4D4F /* Assets.xcassets */,
+				B2E2CF984B3918C339C34B1A /* Info.plist */,
+				276226B09825B0BEF3C565BD /* PrivacyInfo.xcprivacy */,
+				5A96A4E7D24D665362801720 /* Zonn.entitlements */,
+				07A632EB189C4AEBC868447A /* ZonnApp.swift */,
+				134B6003CFD614C59E0D7671 /* Managers */,
+				E6F5B087D5D30564BBA59024 /* Models */,
+				B243AF21E13312D13E1AC1AC /* Spotify */,
+				33E767A72CBBBC4DCF26BE9C /* Theme */,
+				D38FB74C798E242FA709F59F /* Utilities */,
+				9F3FBE880005D5740943CB5E /* Views */,
+				98F29426C03CD6D739FDA615 /* Windows */,
 			);
-			path = Managers;
+			path = Zonn;
 			sourceTree = "<group>";
 		};
-		3CAB70F35DC45671D5687CD3 /* Components */ = {
+		33E767A72CBBBC4DCF26BE9C /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				A862622622919EBF250EFB96 /* CircularProgressRing.swift */,
-				8B7F2BD45C77AA4D0DD35D20 /* CompactTimerView.swift */,
-				BCB06B4560499D8E9ACB9DCC /* DurationPicker.swift */,
-				ECF85A5E08F91FD64829A892 /* ResizeHandleView.swift */,
-				13B9918FDB6D5E0361108CDF /* SessionLabelEditor.swift */,
-				544F18708B4ACDD813C96831 /* TreeGrowthView.swift */,
+				509890EE69D0ED188448D843 /* AppColors.swift */,
 			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		40E83980EAD67E9567B22B9B /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				80598C0E8809ACFCD3907E10 /* AppleScriptSpotifyService.swift */,
-				BC5B44BF1E3B475FDBA3C1A2 /* MockSpotifyService.swift */,
-				BBF0BDD1BCE7D4EB8BA6EE71 /* SpotifyPermissionHandler.swift */,
-			);
-			path = Services;
+			path = Theme;
 			sourceTree = "<group>";
 		};
 		44FD4F197F5AE4F9063ADAEF = {
 			isa = PBXGroup;
 			children = (
-				F705B119368239B579A6D04A /* FlowState */,
+				2A39D4ED8C1A952684FA3641 /* Zonn */,
 				1C476C0DDBE32CC98E925E43 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		68553FA902474304C41C68E3 /* Spotify */ = {
+		8D8624BF624556303A7AC6FD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A7AC43B0DBA825DCCEB1C863 /* SpotifyColors.swift */,
-				FAD5BCE85AA755C56D7C1934 /* SpotifyContracts.swift */,
-				547155E90095481A7E16E033 /* SpotifyManager.swift */,
-				4C95DB15BF1A950A91AC83FB /* SpotifyPermissionProtocol.swift */,
-				40E83980EAD67E9567B22B9B /* Services */,
-				8C86F94E24E240D35E3DE4D1 /* Views */,
-			);
-			path = Spotify;
-			sourceTree = "<group>";
-		};
-		86FCA17E34D6045D011409B1 /* Theme */ = {
-			isa = PBXGroup;
-			children = (
-				76DA6A2FDED66383E787E258 /* AppColors.swift */,
-			);
-			path = Theme;
-			sourceTree = "<group>";
-		};
-		8C86F94E24E240D35E3DE4D1 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				07391CDCBDD6997B2A59D078 /* AlbumArtView.swift */,
-				5028CBE1C05339ECC7F021A0 /* SpotifyControlButton.swift */,
-				81B355B2CCC88E8EDAFA2D81 /* SpotifyMiniPlayerView.swift */,
-				8B55669FDEB3AF34593962C7 /* SpotifyPermissionView.swift */,
-				D0E89CA7FBBFBE3380B046F5 /* SpotifyPlayerView.swift */,
+				11F6C3F427B9A352CAA98AD8 /* AlbumArtView.swift */,
+				1328F76A8CB23C757C79D5BF /* SpotifyControlButton.swift */,
+				EF954378AB27B0D5A6AC7AA7 /* SpotifyMiniPlayerView.swift */,
+				B29AABAE47462DDC06B83476 /* SpotifyPermissionView.swift */,
+				3AB61750007177499CDCB350 /* SpotifyPlayerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		A42C8EB2233B91CB7CC9A8C5 /* Windows */ = {
+		98F29426C03CD6D739FDA615 /* Windows */ = {
 			isa = PBXGroup;
 			children = (
-				9A12CB340058100FB2523E4C /* FocusPanel.swift */,
+				6917A20F7E43B373454937D9 /* FocusPanel.swift */,
 			);
 			path = Windows;
 			sourceTree = "<group>";
 		};
-		D4618970D78CBD44C87A5DC0 /* Views */ = {
+		9F3FBE880005D5740943CB5E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C97C1835B4DC3D1D04F22259 /* FocusView.swift */,
-				73A7BF4FFEBF036BB3A8FD42 /* HistoryView.swift */,
-				775847384346E79254D554A0 /* TimerView.swift */,
-				3CAB70F35DC45671D5687CD3 /* Components */,
+				FBEA34CAAA6F042BFDE3901F /* FocusView.swift */,
+				2EB4A6BF2A2F375DE5009B5B /* HistoryView.swift */,
+				09F65086C6E61CBF9EA1D993 /* TimerView.swift */,
+				B6A7CE029E201C9CE2FD519E /* Components */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		D54B0B6FEDFCF0CEEBE0E6E7 /* Utilities */ = {
+		B243AF21E13312D13E1AC1AC /* Spotify */ = {
 			isa = PBXGroup;
 			children = (
-				C07569926B53525B2A7E4874 /* LayoutSizeClass.swift */,
-				9B9624C9A27CEB12B59A81F6 /* MotivationalTextProvider.swift */,
-				BBCB6B01C2E70B38A2B07C32 /* WindowLayoutContracts.swift */,
+				BDBFF8BB50C17434BEA3253B /* SpotifyColors.swift */,
+				4D0CA3D4045FA41215280E76 /* SpotifyContracts.swift */,
+				A019B98D1F9D870225F3EDF9 /* SpotifyManager.swift */,
+				ED0E5BD1C4BEC06397622A4A /* SpotifyPermissionProtocol.swift */,
+				E601EEE4899C6B04B5D4DBD5 /* Services */,
+				8D8624BF624556303A7AC6FD /* Views */,
+			);
+			path = Spotify;
+			sourceTree = "<group>";
+		};
+		B6A7CE029E201C9CE2FD519E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5A3AB7B89F0BE308D273083D /* CircularProgressRing.swift */,
+				E6846B2F3D769078D1FA02FA /* CompactTimerView.swift */,
+				6A565AAF3C9E6FCCE5F369DA /* DurationPicker.swift */,
+				B33A49269EF3830C8EB6677D /* ResizeHandleView.swift */,
+				4E1C44CC529CD9A84E871417 /* SessionLabelEditor.swift */,
+				DE893072BC43866FB6D15371 /* TreeGrowthView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D38FB74C798E242FA709F59F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B5721A52408825C89368F0DE /* AppConstants.swift */,
+				458483F919CACD42C7798C00 /* LayoutSizeClass.swift */,
+				109B4E37E79A57E65A5D53B4 /* MotivationalTextProvider.swift */,
+				7755EA07F6E8E9477BA67FF0 /* WindowLayoutContracts.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		F705B119368239B579A6D04A /* FlowState */ = {
+		E601EEE4899C6B04B5D4DBD5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				351F6F3B39D91431AE90944C /* AppDelegate.swift */,
-				6160E5FD6788D624BEEE4544 /* Assets.xcassets */,
-				D43F4A929FD213936C0A1629 /* Info.plist */,
-				172FA30E47976554CF494A7F /* PrivacyInfo.xcprivacy */,
-				E9DB5917F3AE569F730A67E5 /* Zonn.entitlements */,
-				0114E9CEA6E7D7C04B830967 /* ZonnApp.swift */,
-				35B052EF4183D21DDD9B9DE7 /* Managers */,
-				16B452D6DF9D3046D5F47B25 /* Models */,
-				68553FA902474304C41C68E3 /* Spotify */,
-				86FCA17E34D6045D011409B1 /* Theme */,
-				D54B0B6FEDFCF0CEEBE0E6E7 /* Utilities */,
-				D4618970D78CBD44C87A5DC0 /* Views */,
-				A42C8EB2233B91CB7CC9A8C5 /* Windows */,
+				DDFC42D07F838139EE0BA29E /* AppleScriptSpotifyService.swift */,
+				D12708290197BDBE3B582233 /* MockSpotifyService.swift */,
+				A11BD0B8E5DC03AA08A73B17 /* SpotifyPermissionHandler.swift */,
 			);
-			path = FlowState;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E6F5B087D5D30564BBA59024 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6F4FC3A5A0F94659CF1DF8DD /* FocusSession.swift */,
+				0E5B3F14437EFB6CA64CB9E7 /* FocusSessionModel.swift */,
+				EB5D68C136B47B05606CBCCF /* FocusTimerState.swift */,
+				B8D79101BF2F9C41FE851F67 /* TimerPhase.swift */,
+				B80F7485F2B479D6E9653E9B /* TimerState.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,8 +294,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2D2BDF834A98ABB818F30AD /* Assets.xcassets in Resources */,
-				B732BACC32017C32AD7FAE3F /* PrivacyInfo.xcprivacy in Resources */,
+				020B9BF70CAEAF0AE0F6ABAF /* Assets.xcassets in Resources */,
+				9E45D129238273DCDCA7A374 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,41 +306,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				986BEFD88485698E866E0DA9 /* AlbumArtView.swift in Sources */,
-				B18DE7B2A39885FE201B71C7 /* AppColors.swift in Sources */,
-				001A48436E941FF42C22624B /* AppDelegate.swift in Sources */,
-				97C9B24E26C138D16A0F7484 /* AppleScriptSpotifyService.swift in Sources */,
-				3C898A3F88064244368E0B91 /* CircularProgressRing.swift in Sources */,
-				9D88EAD315D55361E24841D0 /* CompactTimerView.swift in Sources */,
-				999770294A4F9B4A30C6A20C /* DurationPicker.swift in Sources */,
-				70746B835D5088365EDD1BB8 /* FocusPanel.swift in Sources */,
-				7BDF3C8E893508BBAF770F64 /* FocusSession.swift in Sources */,
-				F556B3A9A32CB0E39B221431 /* FocusSessionModel.swift in Sources */,
-				BF00C680B60B54CE66EF4A3A /* FocusTimerState.swift in Sources */,
-				C3EBC5BC3B90193BD7267E5E /* FocusView.swift in Sources */,
-				B59D2CD46E2132ED996715B4 /* HistoryView.swift in Sources */,
-				819010EE7253C43348952FBE /* LayoutSizeClass.swift in Sources */,
-				E77ADFDDC2F183F53CF24B18 /* MockSpotifyService.swift in Sources */,
-				7816B726D6C66A71DE5AFE9A /* MotivationalTextProvider.swift in Sources */,
-				B2FB7992DAE738C502F3C915 /* ResizeHandleView.swift in Sources */,
-				9F6D1433CBFCB104E7A12C58 /* SessionLabelEditor.swift in Sources */,
-				1B1AD5367000C6C276E1DBCB /* SessionStore.swift in Sources */,
-				55D525D2EC9D8923E5F36542 /* SpotifyColors.swift in Sources */,
-				5B7A3E36DEB31882212B18EC /* SpotifyContracts.swift in Sources */,
-				3037E207914F1E6A89250DD4 /* SpotifyControlButton.swift in Sources */,
-				796A79555D1E625B23B11331 /* SpotifyManager.swift in Sources */,
-				33D6F0027D4A440C466D255E /* SpotifyMiniPlayerView.swift in Sources */,
-				B270B58501ECA66FD664B1A5 /* SpotifyPermissionHandler.swift in Sources */,
-				63D2D98FA8685B89D9DD5028 /* SpotifyPermissionProtocol.swift in Sources */,
-				2E85C74AD1F7E961CEFCC9E8 /* SpotifyPermissionView.swift in Sources */,
-				76173E8953EAC71A96D2BC2F /* SpotifyPlayerView.swift in Sources */,
-				B03344391DA5844EAD03D423 /* StatisticsManager.swift in Sources */,
-				6FB20F7A7CF4B06F72632E5F /* TimerPhase.swift in Sources */,
-				8AC99DFAAE2C5287C40791E8 /* TimerState.swift in Sources */,
-				C54CE98532C29C15382AA0A0 /* TimerView.swift in Sources */,
-				58E821425D8CD3126668B9BA /* TreeGrowthView.swift in Sources */,
-				147C5B79618F3F21E9007F8B /* WindowLayoutContracts.swift in Sources */,
-				506F4B8F550444D858356D8D /* ZonnApp.swift in Sources */,
+				E3A27A342DAC84EE30D65FC8 /* AlbumArtView.swift in Sources */,
+				A86C55A08F8603BAA4521A93 /* AppColors.swift in Sources */,
+				3A521CAA9DDD4180B873C13E /* AppConstants.swift in Sources */,
+				19C03253334540FC4E0F935D /* AppDelegate.swift in Sources */,
+				5101DE9C607DB7CF88E5BCE6 /* AppleScriptSpotifyService.swift in Sources */,
+				C47CBC3F407278EFBBBEC9DC /* CircularProgressRing.swift in Sources */,
+				B39036DCCC9060216172C776 /* CompactTimerView.swift in Sources */,
+				858B548C9DCAF63BDA070803 /* DurationPicker.swift in Sources */,
+				36600C143B4E90651BB8002E /* FocusPanel.swift in Sources */,
+				A19C782DF0A215D55616F870 /* FocusSession.swift in Sources */,
+				BF3BBFB30B30DA7688FFE118 /* FocusSessionModel.swift in Sources */,
+				E5A6FD3BDD546ED0F8C6C512 /* FocusTimerState.swift in Sources */,
+				03E9C35FEEFAA86CF2A9ACCF /* FocusView.swift in Sources */,
+				D569200C5DC333C2BA13EE67 /* HistoryView.swift in Sources */,
+				EDBB62A5FCFFCE4830D3F911 /* LayoutSizeClass.swift in Sources */,
+				213F55613A70FD480E2B3ED6 /* MockSpotifyService.swift in Sources */,
+				7492DE665B81659E5F3CB402 /* MotivationalTextProvider.swift in Sources */,
+				0420B499C2E11D8D7B8EDEF2 /* ResizeHandleView.swift in Sources */,
+				F62FFF3C9BCCD339E186F08C /* SessionLabelEditor.swift in Sources */,
+				93E2934B0AC9BF342E4347F1 /* SessionStore.swift in Sources */,
+				4CA81C78017210E859DF6E15 /* SpotifyColors.swift in Sources */,
+				29D6A1C4473F25F365738F52 /* SpotifyContracts.swift in Sources */,
+				147F615D39405EEA902EDE92 /* SpotifyControlButton.swift in Sources */,
+				036343E826FCA12FA4585CDD /* SpotifyManager.swift in Sources */,
+				BA257257E31935E52379300E /* SpotifyMiniPlayerView.swift in Sources */,
+				E7B90B50FFEDA36E2F1FAE1D /* SpotifyPermissionHandler.swift in Sources */,
+				F8D7381970E93EF9FB4E7F25 /* SpotifyPermissionProtocol.swift in Sources */,
+				252F10785BCACF8241CE19B7 /* SpotifyPermissionView.swift in Sources */,
+				A588C123F94E926573E87F64 /* SpotifyPlayerView.swift in Sources */,
+				764C70B7AFF5FE9FC1448C57 /* StatisticsManager.swift in Sources */,
+				84AB5DFF23CE82C4D7B357DE /* TimerPhase.swift in Sources */,
+				86B5234DF740A2A32A3E7838 /* TimerState.swift in Sources */,
+				2EEEFF2468EBCA92568586E7 /* TimerView.swift in Sources */,
+				13CAD20044B0D0C38BB8F6CB /* TreeGrowthView.swift in Sources */,
+				4001780B8ADC8046D57A6B29 /* WindowLayoutContracts.swift in Sources */,
+				46F3918F0B92D80164DACC35 /* ZonnApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,14 +415,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = FlowState/Zonn.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Zonn/Zonn.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = FlowState/Info.plist;
+				INFOPLIST_FILE = Zonn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -436,14 +440,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = FlowState/Zonn.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Zonn/Zonn.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = FlowState/Info.plist;
+				INFOPLIST_FILE = Zonn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
