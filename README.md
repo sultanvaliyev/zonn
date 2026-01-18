@@ -35,4 +35,4 @@ Visit **[zonn.app](https://zonn.app)** for download instructions.
 
 ## License
 
-Copyright 2026 Sultan Valiyev. All rights reserved.
+MIT License. See [LICENSE](LICENSE) for details.
