@@ -26,3 +26,6 @@ fastlane/test_output
 
 # Code Injection
 iOSInjectionProject/
+
+# Local documentation
+docs/
