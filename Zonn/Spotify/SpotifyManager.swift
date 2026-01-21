@@ -23,6 +23,11 @@ final class SpotifyManager: ObservableObject {
     /// Whether automation permission has been granted
     @Published private(set) var permissionStatus: SpotifyPermissionStatus = .notDetermined
 
+    /// Whether the Spotify application is installed on this Mac
+    var isSpotifyInstalled: Bool {
+        permissionHandler.isSpotifyInstalled
+    }
+
     // MARK: - Configuration
 
     /// Interval between polling updates in seconds

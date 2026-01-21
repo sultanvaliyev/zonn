@@ -8,7 +8,9 @@ struct SpotifyMiniPlayerView: View {
 
     var body: some View {
         Group {
-            if spotifyManager.isConnected {
+            if !spotifyManager.isSpotifyInstalled {
+                notInstalledView
+            } else if spotifyManager.isConnected {
                 connectedView
             } else {
                 disconnectedView
@@ -80,6 +82,33 @@ struct SpotifyMiniPlayerView: View {
         }
     }
 
+    private var notInstalledView: some View {
+        HStack(spacing: 8) {
+            Image(systemName: "arrow.down.app")
+                .font(.system(size: 14))
+                .foregroundColor(AppColors.textOnGreenSecondary)
+
+            Text("Spotify not installed")
+                .font(.system(size: 11, weight: .medium))
+                .foregroundColor(AppColors.textOnGreenSecondary)
+
+            Spacer()
+
+            Button(action: openSpotifyDownloadPage) {
+                Text("Get")
+                    .font(.system(size: 11, weight: .semibold))
+                    .foregroundColor(.white)
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 4)
+                    .background(
+                        Capsule()
+                            .fill(Color(red: 0.11, green: 0.72, blue: 0.33))
+                    )
+            }
+            .buttonStyle(.plain)
+        }
+    }
+
     private var disconnectedView: some View {
         HStack(spacing: 8) {
             Image(systemName: "music.note")
@@ -103,32 +132,30 @@ struct SpotifyMiniPlayerView: View {
 
     // MARK: - Actions
 
+    private func openSpotifyDownloadPage() {
+        if let url = URL(string: "https://www.spotify.com/download/mac/") {
+            NSWorkspace.shared.open(url)
+        }
+    }
+
     private func openSpotify() {
-        guard let spotifyURL = URL(string: "spotify:") else { return }
+        // Safety check - don't try to open Spotify URL if not installed
+        guard spotifyManager.isSpotifyInstalled else { return }
 
-        // Check if Spotify is installed before trying to open
-        if NSWorkspace.shared.urlForApplication(toOpen: spotifyURL) != nil {
-            NSWorkspace.shared.open(spotifyURL)
+        Task {
+            // Request automation permission - this will launch Spotify if needed
+            await spotifyManager.requestPermission()
 
-            // Start a delayed refresh to detect when Spotify launches
-            Task {
-                // Wait a moment for Spotify to start launching
-                try? await Task.sleep(nanoseconds: 1_000_000_000) // 1 second
-
-                // Request automation permission - this triggers the macOS prompt if needed
-                await spotifyManager.requestPermission()
-
-                // Now try to connect with retries
-                for _ in 0..<10 {
-                    try? await Task.sleep(nanoseconds: 500_000_000) // 500ms
-                    await spotifyManager.refresh()
-                    if spotifyManager.isConnected {
-                        // Spotify is now running, ensure polling is active
-                        if !spotifyManager.isPolling {
-                            spotifyManager.startPolling()
-                        }
-                        break
+            // Now try to connect with retries
+            for _ in 0..<10 {
+                try? await Task.sleep(nanoseconds: 500_000_000) // 500ms
+                await spotifyManager.refresh()
+                if spotifyManager.isConnected {
+                    // Spotify is now running, ensure polling is active
+                    if !spotifyManager.isPolling {
+                        spotifyManager.startPolling()
                     }
+                    break
                 }
             }
         }

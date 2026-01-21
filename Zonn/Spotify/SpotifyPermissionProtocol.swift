@@ -11,6 +11,9 @@ enum SpotifyPermissionStatus: Equatable {
 /// Protocol for checking and requesting Spotify automation permissions
 @MainActor
 protocol SpotifyPermissionProtocol {
+    /// Whether the Spotify application is installed on this Mac
+    var isSpotifyInstalled: Bool { get }
+
     /// Current permission status for Spotify automation
     var permissionStatus: SpotifyPermissionStatus { get async }
 

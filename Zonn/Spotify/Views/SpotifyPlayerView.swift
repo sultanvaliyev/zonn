@@ -37,27 +37,32 @@ struct SpotifyPlayerView: View {
 
     // MARK: - Content View Selection
 
-    /// Determines which view to display based on permission and connection state
+    /// Determines which view to display based on installation, permission and connection state
     @ViewBuilder
     private var contentView: some View {
-        switch spotifyManager.permissionStatus {
-        case .notDetermined:
-            // Permission not yet requested - show prompt to connect
-            notDeterminedView
+        if !spotifyManager.isSpotifyInstalled {
+            // Spotify is not installed - show install prompt
+            notInstalledView
+        } else {
+            switch spotifyManager.permissionStatus {
+            case .notDetermined:
+                // Permission not yet requested - show prompt to connect
+                notDeterminedView
 
-        case .denied:
-            // Permission was denied - show permission view with settings option
-            SpotifyPermissionView(spotifyManager: spotifyManager)
-
-        case .authorized, .restricted:
-            // Permission granted - show connected or disconnected state
-            if spotifyManager.hasPermissionError {
-                // Edge case: permission revoked or other error
+            case .denied:
+                // Permission was denied - show permission view with settings option
                 SpotifyPermissionView(spotifyManager: spotifyManager)
-            } else if spotifyManager.isConnected {
-                connectedView
-            } else {
-                disconnectedView
+
+            case .authorized, .restricted:
+                // Permission granted - show connected or disconnected state
+                if spotifyManager.hasPermissionError {
+                    // Edge case: permission revoked or other error
+                    SpotifyPermissionView(spotifyManager: spotifyManager)
+                } else if spotifyManager.isConnected {
+                    connectedView
+                } else {
+                    disconnectedView
+                }
             }
         }
     }
@@ -98,6 +103,47 @@ struct SpotifyPlayerView: View {
             }
             .buttonStyle(.plain)
             .help("Connect to Spotify and grant automation permission")
+        }
+        .frame(maxWidth: .infinity)
+        .padding(.vertical, isCompact ? 8 : 12)
+    }
+
+    // MARK: - Not Installed View
+
+    private var notInstalledView: some View {
+        VStack(spacing: 12) {
+            // Spotify icon
+            Image(systemName: "arrow.down.app")
+                .font(.system(size: isCompact ? 24 : 32))
+                .foregroundColor(AppColors.textOnGreenSecondary)
+
+            Text("Spotify Not Installed")
+                .font(.system(size: isCompact ? 13 : 15, weight: .semibold))
+                .foregroundColor(AppColors.textOnGreen)
+
+            Text("Install Spotify to control your music")
+                .font(.system(size: isCompact ? 11 : 12))
+                .foregroundColor(AppColors.textOnGreenSecondary)
+                .multilineTextAlignment(.center)
+
+            // Download button - opens Spotify download page
+            Button(action: openSpotifyDownloadPage) {
+                HStack(spacing: 6) {
+                    Image(systemName: "arrow.down.circle.fill")
+                        .font(.system(size: 14))
+                    Text("Get Spotify")
+                        .font(.system(size: 13, weight: .medium))
+                }
+                .foregroundColor(.white)
+                .padding(.horizontal, 20)
+                .padding(.vertical, 8)
+                .background(
+                    Capsule()
+                        .fill(AppColors.spotifyGreen)
+                )
+            }
+            .buttonStyle(.plain)
+            .help("Download Spotify from spotify.com")
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, isCompact ? 8 : 12)
@@ -243,19 +289,21 @@ struct SpotifyPlayerView: View {
 
     // MARK: - Actions
 
+    /// Opens the Spotify download page in the default browser
+    private func openSpotifyDownloadPage() {
+        if let url = URL(string: "https://www.spotify.com/download/mac/") {
+            NSWorkspace.shared.open(url)
+        }
+    }
+
     /// Initiates the Spotify connection flow.
     /// Opens Spotify app if needed and requests automation permission.
     private func connectToSpotify() {
+        // Safety check - don't try to open Spotify URL if not installed
+        guard spotifyManager.isSpotifyInstalled else { return }
+
         Task {
-            // First, try to open Spotify if it's not running
-            if let spotifyURL = URL(string: "spotify:") {
-                NSWorkspace.shared.open(spotifyURL)
-            }
-
-            // Wait a moment for Spotify to launch
-            try? await Task.sleep(nanoseconds: 500_000_000) // 500ms
-
-            // Request automation permission - this triggers the macOS permission dialog
+            // Request automation permission - this will launch Spotify if needed
             let granted = await spotifyManager.requestPermission()
 
             if granted {
@@ -272,28 +320,23 @@ struct SpotifyPlayerView: View {
     }
 
     private func openSpotify() {
-        if let spotifyURL = URL(string: "spotify:") {
-            NSWorkspace.shared.open(spotifyURL)
+        // Safety check - don't try to open Spotify URL if not installed
+        guard spotifyManager.isSpotifyInstalled else { return }
 
-            // Start a delayed refresh to detect when Spotify launches
-            Task {
-                // Wait a moment for Spotify to start launching
-                try? await Task.sleep(nanoseconds: 1_000_000_000) // 1 second
+        Task {
+            // Request automation permission - this will launch Spotify if needed
+            await spotifyManager.requestPermission()
 
-                // Request automation permission - this triggers the macOS prompt if needed
-                await spotifyManager.requestPermission()
-
-                // Now try to connect with retries
-                for _ in 0..<10 {
-                    try? await Task.sleep(nanoseconds: 500_000_000) // 500ms
-                    await spotifyManager.refresh()
-                    if spotifyManager.isConnected {
-                        // Spotify is now running, ensure polling is active
-                        if !spotifyManager.isPolling {
-                            spotifyManager.startPolling()
-                        }
-                        break
+            // Now try to connect with retries
+            for _ in 0..<10 {
+                try? await Task.sleep(nanoseconds: 500_000_000) // 500ms
+                await spotifyManager.refresh()
+                if spotifyManager.isConnected {
+                    // Spotify is now running, ensure polling is active
+                    if !spotifyManager.isPolling {
+                        spotifyManager.startPolling()
                     }
+                    break
                 }
             }
         }

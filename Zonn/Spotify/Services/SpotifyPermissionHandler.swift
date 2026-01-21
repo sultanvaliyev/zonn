@@ -41,6 +41,10 @@ final class SpotifyPermissionHandler: SpotifyPermissionProtocol {
 
     // MARK: - SpotifyPermissionProtocol
 
+    var isSpotifyInstalled: Bool {
+        NSWorkspace.shared.urlForApplication(withBundleIdentifier: Self.spotifyBundleIdentifier) != nil
+    }
+
     var permissionStatus: SpotifyPermissionStatus {
         get async {
             await checkPermissionStatus()
@@ -228,10 +232,15 @@ final class MockSpotifyPermissionHandler: SpotifyPermissionProtocol {
     // MARK: - Test Configuration
 
     var mockStatus: SpotifyPermissionStatus = .authorized
+    var mockIsInstalled: Bool = true
     var requestPermissionResult: Bool = true
     var openSettingsCalled = false
 
     // MARK: - SpotifyPermissionProtocol
+
+    var isSpotifyInstalled: Bool {
+        mockIsInstalled
+    }
 
     var permissionStatus: SpotifyPermissionStatus {
         get async { mockStatus }
